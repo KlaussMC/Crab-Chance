@@ -18,7 +18,7 @@ public class Game extends Canvas implements Runnable {
     public Game () {
         handler = new Handler();
         this.window = new Window(WIDTH, HEIGHT, "Crab Chance", this);
-        // init 
+        // init
 
         handler.addPlayer(new Player());
     }
