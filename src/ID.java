@@ -1,3 +1,6 @@
 public enum ID {
-    Card()
+    Bucket(),
+    Player(),
+    Day(),
+    Crab()
 }

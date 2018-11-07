@@ -3,17 +3,19 @@ import java.util.LinkedList;
 
 public class Handler {
     public LinkedList <GameObject> object = new LinkedList();
-
     public LinkedList <Player> players = new LinkedList();
 
     public void tick () {
         for (int i = 0; i < object.size(); i++) {
             GameObject tmp =  object.get(i);
             tmp.tick();
+
         }
         for (Player p : players) {
             p.tick();
         }
+
+        Game.day.tick();
     }
 
     public void render (Graphics g) {
@@ -24,6 +26,9 @@ public class Handler {
         for (Player p : players) {
             p.render(g);
         }
+
+
+        Game.day.render(g);
     }
 
     public void click () {

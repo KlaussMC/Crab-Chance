@@ -15,12 +15,15 @@ public class Game extends Canvas implements Runnable {
 
     public Handler handler;
 
+    public static Day day;
+
     public Game () {
         handler = new Handler();
         this.window = new Window(WIDTH, HEIGHT, "Crab Chance", this);
         // init
 
-        handler.addPlayer(new Player());
+        handler.addPlayer(new Player(ID.Player));
+        day = new Day();
     }
 
     public synchronized void start() {

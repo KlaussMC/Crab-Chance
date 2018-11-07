@@ -1,13 +1,23 @@
 import java.awt.*;
-import java.util.*;
 
-public class Player {
+public class Player extends GameObject {
 
-    void render(Graphics g) {
+    public int total;
+
+    public Player (ID id) {
+        super (id);
+        this.total = 0;
+    }
+
+    public void render(Graphics g) {
 
     }
 
-    void tick () {
+    public void tick () {
+
+    }
+
+    public void click () {
 
     }
 }

@@ -8,7 +8,7 @@ public abstract class GameObject {
 
     protected boolean coversBomb;
 
-    public GameObject(int suit, int value, ID id) {
+    public GameObject(ID id) {
         this.suit = suit;
         this.value = value;
         this.id = id;
